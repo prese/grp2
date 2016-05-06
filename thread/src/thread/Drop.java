@@ -10,7 +10,7 @@ public class Drop {
 	// consumer to retrieve message.
 	private boolean empty = true;
 
-	public  String take() {
+	public synchronized String take() {
 		// Wait until message is
 		// available.
 		while (empty) {

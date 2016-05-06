@@ -23,9 +23,9 @@ public class Producer implements Runnable {
              i++) {
         	//System.out.println("Message ready to be delivered: " + importantInfo[i]); 
             drop.put(importantInfo[i]);
-            try {
-                Thread.sleep(random.nextInt(5000));
-            } catch (InterruptedException e) {}
+//            try {
+//                Thread.sleep(random.nextInt(5000));
+//            } catch (InterruptedException e) {}
         }
         drop.put("DONE");
     }

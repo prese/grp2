@@ -8,8 +8,6 @@ public class SmartProducerConsumerExample {
 		
 		LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>();
 		
-		
-		
 		(new Thread(new SmartProducer(queue))).start();
 		(new Thread(new SmartConsumer(queue))).start();
 	}
