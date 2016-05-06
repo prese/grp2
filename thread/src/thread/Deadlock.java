@@ -20,6 +20,7 @@ public class Deadlock {
 		public synchronized void bowBack(Friend bower) {
 			System.out.format("%s: %s" + " has bowed back to me!%n", this.name, bower.getName());
 		}
+		
 	}
 
 	public static void main(String[] args) {
